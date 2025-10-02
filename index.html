@@ -5,5 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <main id="wrapper">
+      <div class="container">
+        <!-- Light/Dark Mode Toggle -->
+        <header class="mode-toggle">
+          <h6 class="label-dark">Dark</h6>
+          <div class="toggle-switch"></div>
+          <h6 class="label-light">Light</h6>
+        </header>
+        <div class="stopwatch">
+          <!-- Stopwatch face / display -->
+          <section class="stopwatch-display">
+            <h1>00:00:00</h1>
+          </section>
+
+          <!-- Buttons -->
+          <section class="buttons">
+            <div class="top-button">
+              <!-- Start and Resume button will be changed based on the user selection
+             Start - when the user is starting a new count
+             Resume - when the usr pauses the timer -->
+              <button class="btns btn--start">Start</button>
+              <button class="btns btn--pause">Pause</button>
+            </div>
+            <div class="bottom-buttons">
+              <button class="btns btn--lap">Lap</button>
+              <button class="btns btn--reset">Reset</button>
+            </div>
+          </section>
+          <section class="lap--information">
+            <ul class="laps">
+              <!-- Laps will be appended here -->
+              <li>#1 00:00:00</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
