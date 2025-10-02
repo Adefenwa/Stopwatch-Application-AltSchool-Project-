@@ -10,11 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="dark">
     <main id="wrapper">
       <div class="container">
         <!-- Light/Dark Mode Toggle -->
+        <div class="load-flash"></div>
         <header class="mode-toggle">
           <h6 class="label-dark">Dark</h6>
           <div class="toggle-switch"></div>
@@ -23,7 +25,12 @@
         <div class="stopwatch">
           <!-- Stopwatch face / display -->
           <section class="stopwatch-display">
-            <h1>00:00:00</h1>
+            <h1>
+              <span class="hour">00</span>: <span class="minute">00</span>:<span
+                class="seconds"
+                >00</span
+              ><span class="milliseconds">00</span>
+            </h1>
           </section>
 
           <!-- Buttons -->
@@ -49,5 +56,6 @@
         </div>
       </div>
     </main>
+    <script src="./toggle.js"></script>
   </body>
 </html>

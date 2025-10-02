@@ -1,3 +1,4 @@
+/* RESET STYLING */
 *,
 ::before,
 ::after {
@@ -5,4 +6,36 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+/* STOPWATCH FACE/DISPLAY */
+.stopwatch {
+  background-color: #f5f5f5;
+  padding: 1em;
+  margin-top: 3em;
+  border-radius: 20px;
+}
+
+.stopwatch-display {
+  border: 0.5em solid;
+  border-color: grey;
+  border-radius: 50%;
+  margin: 1em 0;
+  padding: 8em 1em;
+}
+.stopwatch-display h1 {
+  text-align: center;
+  color: #151515;
+}
+.milliseconds {
+  font-size: 0.5em;
+  vertical-align: super;
 }
