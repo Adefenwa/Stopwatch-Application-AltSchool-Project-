@@ -12,11 +12,15 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="dark">
     <main id="wrapper">
       <div class="container">
-        <header>
-          <h5 class="about">About</h5>
+        <!-- Light/Dark Mode Toggle -->
+        <div class="load-flash"></div>
+        <header class="mode-toggle">
+          <h6 class="label-dark">Dark</h6>
+          <div class="toggle-switch"></div>
+          <h6 class="label-light">Light</h6>
         </header>
         <div class="stopwatch">
           <!-- Stopwatch face / display -->
@@ -31,16 +35,27 @@
 
           <!-- Buttons -->
           <section class="buttons">
-            <button class="btns btn--start">Start</button>
-            <button class="btns btn--pause">Pause</button>
-            <button class="btns btn--reset">Reset</button>
+            <div class="top-button">
+              <!-- Start and Resume button will be changed based on the user selection
+             Start - when the user is starting a new count
+             Resume - when the usr pauses the timer -->
+              <button class="btns btn--start">Start</button>
+              <button class="btns btn--pause">Pause</button>
+            </div>
+            <div class="bottom-buttons">
+              <button class="btns btn--lap">Lap</button>
+              <button class="btns btn--reset">Reset</button>
+            </div>
+          </section>
+          <section class="lap--information">
+            <ul class="laps">
+              <!-- Laps will be appended here -->
+              <li>#1 00:00:00</li>
+            </ul>
           </section>
         </div>
-        <footer>
-          <p>Developed by Sotunde Emmanuel, AltSchool beginner's project</p>
-        </footer>
       </div>
     </main>
-    <script src="./app.js"></script>
+    <script src="./toggle.js"></script>
   </body>
 </html>
